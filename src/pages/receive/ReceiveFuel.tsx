@@ -363,7 +363,7 @@ export const ReceiveFuel: React.FC = () => {
               <ChevronRight size={16} color="var(--text-secondary)" />
             )}
             <span style={{ fontSize: '14px', fontWeight: 600, color: 'var(--text-secondary)' }}>
-              Received This Session ({receivedDeliveries.length})
+              Received ({receivedDeliveries.length})
             </span>
           </button>
 

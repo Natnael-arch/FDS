@@ -1,0 +1,78 @@
+:root {
+  /* Surface */
+  --surface-base: #F4F6F0;
+  --surface-raised: #FFFFFF;
+  --surface-border: #D4DAC8;
+  --surface-highlight: #EEF3E6;
+
+  /* Sidebar */
+  --sidebar-bg: #1C2B1A;
+  --sidebar-active: #2E4A2A;
+  --sidebar-hover: #253C22;
+
+  /* Text */
+  --text-primary: #161E14;
+  --text-secondary: #4A5E42;
+  --text-tertiary: #7A8F72;
+
+  /* Accents */
+  --accent-primary: #2D6A1F;
+  --accent-primary-light: #4A9C32;
+  --accent-secondary: #1A4A7C;
+  --accent-success: #15803D;
+  --accent-warning: #92400E;
+  --accent-danger: #991B1B;
+
+  /* Delivery Lifecycle */
+  --request-draft: #F1F5F9;
+  --request-submitted: #EFF6FF;
+  --request-under-review: #FEF3C7;
+  --request-approved: #D1FAE5;
+  --request-rejected: #FEE2E2;
+  --request-dispatched: #E0E7FF;
+  --request-delivered: #D1FAE5;
+
+  /* Fuel Colors */
+  --fuel-diesel: #2563EB;
+  --fuel-benzine: #D97706;
+  --fuel-kerosene: #0D9488;
+  --fuel-hfo: #7C3AED;
+
+  /* Typography */
+  --font-ui: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-ui);
+  background-color: var(--surface-base);
+  color: var(--text-primary);
+  line-height: 1.5;
+  font-size: 15px; /* Base size for tablet field use */
+}
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.top-header {
+  height: 58px;
+  background-color: var(--surface-raised);
+  border-bottom: 1px solid var(--surface-border);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 1;
+  padding: 24px;
+}
